@@ -25,7 +25,8 @@ func NewHelloChainApp(logger log.Logger, db dbm.DB) abci.Application {
 	// construct our starter to extend
 	appStarter := starter.NewAppStarter(appName, logger, db)
 
-	//compose our app with starter
+
+	// compose our app with starter
 	var app = &helloChainApp{
 		appStarter,
 	}
